@@ -1,0 +1,130 @@
+<mxfile host="65bd71144e">
+    <diagram id="Ni6t73bayncxDc60GTvv" name="Page-1">
+        <mxGraphModel dx="592" dy="344" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#9EAAB3" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="40" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.013;entryY=0.632;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FFFFCC;strokeWidth=2;startArrow=ERmandOne;startFill=0;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="628.1799999999998" y="653.76" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="MEDICINE_INFO&lt;br&gt;id,&lt;br&gt;description,&lt;br&gt;valor_unitario&lt;br&gt;id_medicine_name&lt;br&gt;id_medicine_brand" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="365" y="600" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FFFFFF;endArrow=ERmany;endFill=0;startArrow=ERmandOne;startFill=0;strokeColor=#FFFFCC;strokeWidth=2;" parent="1" source="3" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="160" y="360"/>
+                            <mxPoint x="110" y="360"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="ROLE(admin,employee, customer, supplier)&lt;br&gt;id&lt;br&gt;description" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="200" width="180" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#FFFFCC;strokeWidth=2;fontColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERmany;endFill=0;" parent="1" source="4" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="110" y="525"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="USER&lt;br&gt;id,&lt;br&gt;id_person&lt;br&gt;username,&lt;br&gt;password,&lt;br&gt;email,&lt;br&gt;Access_token,&lt;br&gt;refresh_token" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="460" width="130" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="ROLE_USER&lt;br&gt;id_user,&lt;br&gt;id_role" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="400" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#FFFFCC;strokeWidth=2;fontColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERmandOne;endFill=0;" parent="1" source="7" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="440" y="490"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#FFFFCC;strokeWidth=2;fontColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERmany;endFill=0;entryX=0.382;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="7" target="15" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="610" y="325"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="PERSON&lt;br&gt;id,&lt;br&gt;fullname,&lt;br&gt;birthday,&lt;br&gt;document_number,&lt;br&gt;id_document_type" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="260" width="140" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.71;entryY=-0.008;entryDx=0;entryDy=0;strokeColor=#FFFFCC;strokeWidth=2;fontColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERmandOne;endFill=0;entryPerimeter=0;" parent="1" source="10" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="DOCUMENT_TYPE&lt;br&gt;id,&lt;br&gt;description" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="100" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.764;entryY=0.003;entryDx=0;entryDy=0;strokeColor=#FFFFCC;strokeWidth=2;fontColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERmany;endFill=0;entryPerimeter=0;" parent="1" source="12" target="15" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="660" y="180"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="CONTACT_TYPE&lt;br&gt;(corporativo,personal)&lt;br&gt;id,&lt;br&gt;name" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="140" width="135" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;exitX=0.004;exitY=0.284;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;strokeColor=#FFFFCC;strokeWidth=2;fontColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERmany;endFill=0;exitPerimeter=0;" parent="1" source="14" target="15" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="720" y="390"/>
+                            <mxPoint x="720" y="253"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="CONTACT_CATEGORY&lt;br&gt;(email,phoneNumber,address)&lt;br&gt;id,&lt;br&gt;name" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="770" y="370" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="CONTACT&lt;br&gt;id_person&lt;br&gt;id_contact_type,&lt;br&gt;id_contact_category,&lt;br&gt;description" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="200" width="130" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=none;html=1;strokeColor=#FFFFCC;strokeWidth=2;startArrow=ERmandOne;startFill=0;endArrow=ERmany;endFill=0;entryX=0.003;entryY=0.547;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.583;exitY=1.008;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2" target="31">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="600" y="800" as="targetPoint"/>
+                        <mxPoint x="525" y="796.7432365041766" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="450" y="818"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=none;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;strokeColor=#FFFFCC;strokeWidth=2;startArrow=ERmandOne;startFill=0;endArrow=ERmany;endFill=0;exitX=1.008;exitY=0.618;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="27" target="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="710" as="sourcePoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="MEDICINE_BRAND&lt;br&gt;id,&lt;br&gt;name," style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="630" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=none;html=1;entryX=0.597;entryY=0.014;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FFFFCC;strokeWidth=2;startArrow=ERmandOne;startFill=0;endArrow=ERmany;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="29" target="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="455" y="570" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="MEDICINE_NAME&lt;br&gt;(omeprasol,acetaminofen)&lt;br&gt;id,&lt;br&gt;name" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="380" y="510" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="MEDICINE_Factura&lt;br&gt;id_medicamento,&lt;br&gt;id_factura,&lt;br&gt;sold_units" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="780" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.325;entryDx=0;entryDy=0;strokeColor=#FFFFCC;strokeWidth=2;startArrow=ERmandOne;startFill=0;endArrow=ERmany;endFill=0;entryPerimeter=0;" edge="1" parent="1" source="36" target="31">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="FACTURA&lt;br&gt;id,&lt;br&gt;id_seller&lt;br&gt;id_buyer&lt;br&gt;id_medicine_info" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="760" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="Compras&lt;br&gt;id,&lt;br&gt;id_seller&lt;br&gt;id_buyer&lt;br&gt;id_medicine_info" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="950" y="770" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Ventas&lt;br&gt;id,&lt;br&gt;id_seller&lt;br&gt;id_buyer&lt;br&gt;id_medicine_info" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="1070" y="770" width="120" height="90" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
